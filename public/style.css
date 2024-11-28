@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+color: black;
+}
+body{
+        /* background-color: rgb(5, 5, 26); */
+
+}
+.container-first {
+    height: 90vh;
+    width: 100%;
+    background-color: aquamarine;
+    /* background-image: url(./images/2.avif); */
+
+    background-image: url(./images/group-pic.jpg);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+
+/* background-size:100% auto; */
+    /* overflow: hidden; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+body::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.form-control {
+    width: 300px !important;
+}
+
+
+
+.caption {
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+    position: absolute;
+    /* background-color: rgb(231, 170, 170); */
+    padding-top: 180px;
+
+}
+
+.caption h1 {
+    font-size: 3.5rem;
+}
+
+marquee {
+    font-size: 3rem;
+    padding-top: 30px;
+}
+
+.caption p {
+    padding-top: 20px;
+
+}
+
+
+#shop-now,
+#read-more {
+    background-color: black;
+    height: 45px;
+    width: 140px;
+    color: antiquewhite;
+    border-radius: 15px;
+    margin: 10px;
+    border: none;
+    transition: 1.2s;
+}
+
+#read-more:hover {
+    background-color: white;
+    color: black;
+}
+.image{
+    /* background-color: rgb(134, 81, 15); */
+    height: 120px;
+}
+.image img{
+    height: 100%;
+    border-radius: 5px;
+
+    width: 100%;
+}
+#add-to-cart-btn{
+    background-color: black;
+    height: 35px;
+    width: 100px;
+    color: antiquewhite;
+    border-radius: 12px;
+    margin: 10px;
+    border: none;
+    transition: 1.2s;
+
+}
+
+/* extra small mobhile  */
+
+/* ////////////////////
+
+media queries ;;;;
+''''''''
+';;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;; */
+
+@media only screen and (max-width : 321px) {
+    .caption {
+        width: 100%;
+        height: 60vh;
+        padding-top: 10px;
+        /* background-color: rgb(117, 27, 27); */
+
+
+    }
+    .caption h1 {
+        font-size: 1rem;
+    }
+    
+    marquee {
+        font-size: 1rem;
+        padding-top: 30px;
+    }
+    
+    .caption p {
+        padding-top: 5px;
+        font-size: 10px;
+        padding: 0px 30px 0px 30px;
+
+    
+    }
+    #shop-now,
+    #read-more {
+        height: 25px;
+        width: 90px;
+        margin: 10px;
+    }
+    .container-first {
+        height: 90vh;
+        width: 100%;
+        background-color: rgb(223, 250, 124);
+        background-image: url(./images/group-pic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+/* small mobhile  */
+
+@media only screen and (min-width : 321px)  and  (max-width : 479px){
+    .caption {
+        width: 100%;
+        height: 40vh;
+        padding-top: 35px !important;
+        /* background-color: rgb(117, 27, 27); */
+
+
+    }
+    .caption h1 {
+        font-size: 1.3rem;
+    }
+    
+    marquee {
+        font-size: 1rem;
+        padding-top: 30px;
+    }
+    
+    .caption p {
+        padding-top: 5px;
+        font-size: 10px;
+        padding: 0px 50px 0px 50px;
+
+    
+    }
+    .shopping-container {
+        display: grid;
+         background-color: rgb(255, 0, 255);
+         margin-top: 95vh;
+         height: 240vh !important;
+      }
+      /* .shopping-card {
+        padding: 20px;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        text-align: center;
+        height: 30px;
+        width: 50px;
+    
+      } */ */
+     */
+/* #best{
+    margin-top: 400vh !important;
+}     */
+    #shop-now,
+    #read-more {
+        height: 25px;
+        width: 90px;
+        margin: 10px;
+    }
+    .container-first {
+        height: 50vh;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+/* cards css starrt  */
+.shopping-container {
+    display: grid;
+    gap: 12px;
+     padding-top: 60px;
+     background-color: rgb(34, 151, 112);
+     /* margin-right: 50px; */
+     /* justify-content: space-around; */
+     height: 120vh;
+
+  }
+  .shopping-card {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 300px;
+    /* width: 250px; */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+  }
+  
+  /* Small screens */
+  @media (max-width: 600px) {
+    .shopping-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .shopping-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1025px) {
+    .shopping-container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /*   third cards css END  */
+
+
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css STRAT */
+
+
+
+
+  .container-sec {
+    display: grid;
+    gap: 1rem;
+    padding-top: 50px;
+    background-color: aquamarine;
+    height: 70vh;
+  }
+  
+  .card-sec{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 360px;
+
+  }
+  .card-sec img{
+width: 100%;
+/* object-fit: fill; */
+/* object-fit: cover; */
+  }
+  
+  /* Default view: Small screens (show only 1 card per row) */
+  @media (max-width: 576px) {
+    .container-sec {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Medium screens (show 3 cards per row) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    .container-sec {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Large screens (show 4 cards per row) */
+  @media (min-width: 993px) {
+    .container-sec {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css END  */
+
+  
+  
