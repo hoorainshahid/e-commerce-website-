@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hamburger Menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">E-Shop</div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="btn btn-outline-success" type="submit" id="logout-btn">logout</button>
+
+        </ul>
+
+        <div class="cart-icon" id="cart-icon">
+            <span id="cart-count">0</span> 🛒
+
+        </div>
+
+    </nav>
+
+    <!-- Landing Page Section -->
+    <section id="home" class="landing">
+        <div class="landing-content">
+            <!-- <a href ="./index.html">login</a>
+
+            <h1>Welcome, <span id="displayUserName"></span>!</h1>
+             -->
+        
+            <h1>Welcome to E-Shop</h1>
+            <p>Your one-stop destination for amazing products.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10</p>
+                <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="10">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$38</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$33</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$35</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$45</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$54</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$5</p>
+                <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart">✖</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <strong>Total: $<span id="cart-total">0</span></strong>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script type="module" src="./home.js"></script>
+    <script type="module" src="./login.js"></script>
+    <script type="module" src="./script.js"></script>
+
+
+    <script>        // Get username from localStorage
+        const userName = localStorage.getItem('email');
+
+        // Display username
+        document.getElementById('displayUserName').innerText = userName || 'Guest';
+</script>
+</body>
+</html>
