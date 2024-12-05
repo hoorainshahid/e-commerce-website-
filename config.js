@@ -3,8 +3,7 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import {  getAuth  } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore-compat.js";
-
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js';
 // import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
 
@@ -24,4 +23,21 @@ const firebaseConfig = {
 //   const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
-export const db = getFirestore(app);
+// export const db = getFirestore(firestore); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
