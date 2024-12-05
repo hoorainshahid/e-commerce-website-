@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Hamburger Menu</title>
+    <title>Eczomy</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">E-Shop</div>
+        <div class="logo">Eczomy</div>
         <div class="hamburger" id="hamburger">
             &#9776;
         </div>
@@ -33,10 +33,13 @@
     <section id="home" class="landing">
         <div class="landing-content">
             <!-- <a href ="./index.html">login</a>
-
             <h1>Welcome, <span id="displayUserName"></span>!</h1>
              -->
-        
+            <form id="form">
+            <input type="text" name="" id="tittle" placeholder="tittle">
+            <input type="text" name="" id="description" placeholder="description">
+<button type="submit">submit</button>
+</form>
             <h1>Welcome to E-Shop</h1>
             <p>Your one-stop destination for amazing products.</p>
             <a href="#products" class="btn">Shop Now</a>
@@ -123,17 +126,12 @@
         </div>
     </div>
 
-    <script src="login.js"></script>
     <script type="module" src="./home.js"></script>
     <script type="module" src="./login.js"></script>
     <script type="module" src="./script.js"></script>
+    <script type="module" src="./login.js"></script>
 
 
-    <script>        // Get username from localStorage
-        const userName = localStorage.getItem('email');
 
-        // Display username
-        document.getElementById('displayUserName').innerText = userName || 'Guest';
-</script>
 </body>
 </html>

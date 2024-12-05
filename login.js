@@ -26,7 +26,7 @@ form.addEventListener('submit', (event) => {
       const user = userCredential.user;
       console.log(user)
       window.location = 'main.html'
-      swal("you are succesfully login")
+      alert("you are succesfully login")
 
 
     })
