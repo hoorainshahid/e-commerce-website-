@@ -1,8 +1,8 @@
 
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
-import { auth , db } from "./config.js";
-import { collection, addDoc } from "firebase/firestore"; 
+import { auth, db } from "./config.js";
+import { collection, addDoc } from "firebase/firestore";
 
 
 onAuthStateChanged(auth, (user) => {
@@ -38,16 +38,16 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   console.log(tittle.value);
   console.log(description.value);
-  
-// try {
-//   const docRef = await addDoc(collection(db, "users"), {
-//     first: "Ada",
-//     last: "Lovelace",
-//     born: 1815
-//   });
-//   console.log("Document written with ID: ", docRef.id);
-// } catch (e) {
-//   console.error("Error adding document: ", e);
-// }
+
+  // try {
+  //   const docRef = await addDoc(collection(db, "users"), {
+  //     first: "Ada",
+  //     last: "Lovelace",
+  //     born: 1815
+  //   });
+  //   console.log("Document written with ID: ", docRef.id);
+  // } catch (e) {
+  //   console.error("Error adding document: ", e);
+  // }
 
 })

@@ -1,123 +1,133 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-color: black;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
 }
-body{
-        /* background-color: rgb(5, 5, 26); */
+
+body {
+  /* background-color: rgb(5, 5, 26); */
 
 }
+
 .container-first {
-    height: 90vh;
-    width: 100%;
-    background-color: green;
-    /* background-image: url(./images/2.avif); */
+  height: 90vh;
+  width: 100%;
+  background-color: green;
+  /* background-image: url(./images/2.avif); */
 
-    background-image: url(./images/group-pic.jpg);
-    background-repeat: no-repeat;
-    background-size:100% auto;
+  background-image: url(./images/group-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
-/* background-size:100% auto; */
-    /* overflow: hidden; */
-    /* display: flex;
+  /* background-size:100% auto; */
+  /* overflow: hidden; */
+  /* display: flex;
     justify-content: center;
     align-items: center; */
 }
-.heading{
+
+.heading {
   height: 35vh;
   width: 100%;
   background-color: aqua;
   padding: 40px;
 
 }
+
 body::-webkit-scrollbar {
 
-    display: none;
+  display: none;
 
 }
 
 .form-control {
-    width: 300px !important;
+  width: 300px !important;
 }
 
 
 
 .caption {
-    width: 100%;
-    text-align: center;
-    height: 60vh;
-    position: absolute;
-    /* background-color: rgb(231, 170, 170); */
-    padding-top: 180px;
+  width: 100%;
+  text-align: center;
+  height: 60vh;
+  position: absolute;
+  /* background-color: rgb(231, 170, 170); */
+  padding-top: 180px;
 
 }
 
 .caption h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 marquee {
-    font-size: 3rem;
-    padding-top: 30px;
+  font-size: 3rem;
+  padding-top: 30px;
 }
 
 .caption p {
-    padding-top: 20px;
+  padding-top: 20px;
 
 }
 
 
 #shop-now,
 #read-more {
-    background-color: black;
-    height: 45px;
-    width: 140px;
-    color: antiquewhite;
-    border-radius: 15px;
-    margin: 10px;
-    border: none;
-    transition: 1.2s;
+  background-color: black;
+  height: 45px;
+  width: 140px;
+  color: antiquewhite;
+  border-radius: 15px;
+  margin: 10px;
+  border: none;
+  transition: 1.2s;
 }
 
 #read-more:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-.image{
-    /* background-color: rgb(134, 81, 15); */
-    height: 120px;
-}
-.image img{
-    height: 100%;
-    border-radius: 5px;
 
-    width: 100%;
+.image {
+  /* background-color: rgb(134, 81, 15); */
+  height: 120px;
 }
-#add-to-cart-btn{
-    background-color: black;
-    height: 35px;
-    width: 100px;
-    color: antiquewhite;
-    border-radius: 12px;
-    margin: 10px;
-    border: none;
-    transition: 1.2s;
+
+.image img {
+  height: 100%;
+  border-radius: 5px;
+
+  width: 100%;
+}
+
+#add-to-cart-btn {
+  background-color: black;
+  height: 35px;
+  width: 100px;
+  color: antiquewhite;
+  border-radius: 12px;
+  margin: 10px;
+  border: none;
+  transition: 1.2s;
 
 }
-#logout-btn{
+
+#logout-btn {
   background-color: rgb(18, 80, 18);
   color: white;
-margin-left: 10px;
-margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
-.navbar-brand{
+
+.navbar-brand {
   /* background-color: red; */
   margin-left: 20px;
 
 }
-.footer{
+
+.footer {
   background-color: yellow;
   height: 60vh;
   width: 100%;
@@ -126,27 +136,32 @@ margin-right: 10px;
   align-items: center;
 
 }
-.para-1{
+
+.para-1 {
   background-color: green;
   height: 400px;
-  width:400px;
+  width: 400px;
 
 }
-.para-2{
+
+.para-2 {
   background-color: rgb(12, 14, 12);
   height: 400px;
-  width:400px;
+  width: 400px;
 
 }
-.para-3{
+
+.para-3 {
   background-color: rgb(77, 88, 77);
   height: 400px;
-  width:500px;
+  width: 500px;
 
 }
-.container-footer{
+
+.container-footer {
   display: flex;
 }
+
 /* extra small mobhile  */
 
 /* ////////////////////
@@ -158,218 +173,233 @@ media queries ;;;;
 ;;;;;;;;;;;;;;;;;;;;;; */
 
 @media only screen and (max-width : 321px) {
-    .caption {
-        width: 100%;
-        height: 60vh;
-        padding-top: 10px;
-        background-color: rgb(117, 27, 27);
+  .caption {
+    width: 100%;
+    height: 60vh;
+    padding-top: 10px;
+    background-color: rgb(117, 27, 27);
 
 
-    }
-    .caption h1 {
-        font-size: 1rem;
-    }
-    
-    marquee {
-        font-size: 1rem;
-        padding-top: 30px;
-    }
-    
-    .caption p {
-        padding-top: 5px;
-        font-size: 10px;
-        padding: 0px 30px 0px 30px;
+  }
 
-    
-    }
-    #shop-now,
-    #read-more {
-        height: 25px;
-        width: 90px;
-        margin: 10px;
-    }
-    .container-first {
-        height: 90vh;
-        width: 100%;
-        /* background-color: rgb(223, 250, 124); */
-        background-image: url(./images/group-pic.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* overflow: hidden; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
+  .caption h1 {
+    font-size: 1rem;
+  }
+
+  marquee {
+    font-size: 1rem;
+    padding-top: 30px;
+  }
+
+  .caption p {
+    padding-top: 5px;
+    font-size: 10px;
+    padding: 0px 30px 0px 30px;
+
+
+  }
+
+  #shop-now,
+  #read-more {
+    height: 25px;
+    width: 90px;
+    margin: 10px;
+  }
+
+  .container-first {
+    height: 90vh;
+    width: 100%;
+    /* background-color: rgb(223, 250, 124); */
+    background-image: url(./images/group-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
+
 /* small mobhile  */
 
-@media only screen and (min-width : 321px)  and  (max-width : 479px){
-    .caption {
-        width: 100%;
-        height: 40vh;
-        padding-top: 35px !important;
+@media only screen and (min-width : 321px) and (max-width : 479px) {
+  .caption {
+    width: 100%;
+    height: 40vh;
+    padding-top: 35px !important;
 
-    }
-    .caption h1 {
-        font-size: 1.3rem;
-    }
-    
-    marquee {
-        font-size: 1rem;
-        padding-top: 30px;
-    }
-    
-    .caption p {
-        padding-top: 5px;
-        font-size: 10px;
-        padding: 0px 50px 0px 50px;
+  }
 
-    
-    }
-    .shopping-container {
-        display: grid;
-         /* background-color: rgb(255, 0, 255); */
-         margin-top: 95vh;
-         height: 240vh !important;
-      }
-      .shopping-card p{
-        font-size: 10px;
+  .caption h1 {
+    font-size: 1.3rem;
+  }
 
-      }
-      #add-to-cart-btn{
-        width: 85px;
-        font-size: 10px;
+  marquee {
+    font-size: 1rem;
+    padding-top: 30px;
+  }
 
-      }
-      .shopping-card {
-        height: 300px;
-    
-      } */
-     */
-    #shop-now,
-    #read-more {
-        height: 25px;
-        width: 90px;
-        margin: 10px;
-    }
-    .container-first {
-        height: 50vh;
-        width: 100%;
-        /* background-color: aquamarine; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
+  .caption p {
+    padding-top: 5px;
+    font-size: 10px;
+    padding: 0px 50px 0px 50px;
+
+
+  }
+
+  .shopping-container {
+    display: grid;
+    /* background-color: rgb(255, 0, 255); */
+    margin-top: 95vh;
+    height: 240vh !important;
+  }
+
+  .shopping-card p {
+    font-size: 10px;
+
+  }
+
+  #add-to-cart-btn {
+    width: 85px;
+    font-size: 10px;
+
+  }
+
+  .shopping-card {
+    height: 300px;
+
+  }
+
+  */ */ #shop-now,
+  #read-more {
+    height: 25px;
+    width: 90px;
+    margin: 10px;
+  }
+
+  .container-first {
+    height: 50vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 /* cards css starrt  */
 .shopping-container {
-    display: grid;
-    gap: 12px;
-     padding-top: 60px;
-     background-color: rgb(34, 151, 112);
-     /* margin-right: 50px; */
-     /* justify-content: space-around; */
-     height: 120vh;
+  display: grid;
+  gap: 12px;
+  padding-top: 60px;
+  background-color: rgb(34, 151, 112);
+  /* margin-right: 50px; */
+  /* justify-content: space-around; */
+  height: 120vh;
 
+}
+
+.shopping-card:hover {
+  box-shadow: 0px 0px 18px 0px #888888 !important;
+  margin-top: 3px;
+}
+
+.shopping-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Adjust values to control shadow effect */
+  border-radius: 5px;
+  /* Optional: add rounded corners */
+  padding: 10px;
+  /* Optional: add padding inside the card */
+  margin: 0px;
+  /* Optional: add spacing between cards */
+}
+
+.shopping-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 350px;
+  /* width: 250px; */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .shopping-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .shopping-card:hover{
-     box-shadow:  0px 0px 18px 0px  #888888 !important ;
-     margin-top: 3px;
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .shopping-container {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .shopping-card {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust values to control shadow effect */
-    border-radius: 5px; /* Optional: add rounded corners */
-    padding: 10px; /* Optional: add padding inside the card */
-    margin: 0px; /* Optional: add spacing between cards */
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .shopping-container {
+    grid-template-columns: repeat(5, 1fr);
   }
-  .shopping-card {
-    padding: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
-    height: 350px;
-    /* width: 250px; */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+}
 
-  }
-  
-  /* Small screens */
-  @media (max-width: 600px) {
-    .shopping-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  /* Medium screens */
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .shopping-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  /* Large screens */
-  @media (min-width: 1025px) {
-    .shopping-container {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  
-  /*   third cards css END  */
+/*   third cards css END  */
 
 
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css STRAT */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css STRAT */
 
 
 
 
+.container-sec {
+  display: grid;
+  gap: 1rem;
+  padding-top: 50px;
+  /* background-color: aquamarine; */
+  height: 70vh;
+}
+
+.card-sec {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 367px;
+
+}
+
+.card-sec img {
+  width: 100%;
+  /* object-fit: fill; */
+  /* object-fit: cover; */
+}
+
+/* Default view: Small screens (show only 1 card per row) */
+@media (max-width: 576px) {
   .container-sec {
-    display: grid;
-    gap: 1rem;
-    padding-top: 50px;
-    /* background-color: aquamarine; */
-    height: 70vh;
+    grid-template-columns: 1fr;
   }
-  
-  .card-sec{
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2rem;
-    height: 367px;
+}
 
+/* Medium screens (show 3 cards per row) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .container-sec {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .card-sec img{
-width: 100%;
-/* object-fit: fill; */
-/* object-fit: cover; */
-  }
-  
-  /* Default view: Small screens (show only 1 card per row) */
-  @media (max-width: 576px) {
-    .container-sec {
-        grid-template-columns: 1fr;
-    }
-  }
-  
-  /* Medium screens (show 3 cards per row) */
-  @media (min-width: 577px) and (max-width: 992px) {
-    .container-sec {
-        grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  /* Large screens (show 4 cards per row) */
-  @media (min-width: 993px) {
-    .container-sec {
-        grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css END  */
+}
 
-  
-  
+/* Large screens (show 4 cards per row) */
+@media (min-width: 993px) {
+  .container-sec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, second  section  k cards ki css END  */
